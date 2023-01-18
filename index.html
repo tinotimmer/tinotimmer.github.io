@@ -27,14 +27,13 @@
     <script>
       document.getElementById("kekw").addEventListener("mouseover", function() {
         this.src = "kekwanimated.gif";
-
-        function play() {
           var audio = document.getElementById("audio");
           audio.play();
-        }
       });
       document.getElementById("kekw").addEventListener("mouseout", function() {
         this.src = "kekw.png";
+	var audio = document.getElementById("audio");
+        audio.stop();
       });
     </script>
     <audio id="radw" src="radwBOOST.mp3"></audio>
