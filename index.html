@@ -100,7 +100,12 @@ button.onmouseover = function() {
 	button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
 	button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
 }
-
+let cursorTypes = ["default", "pointer", "crosshair", "not-allowed", "wait", "help", "move", "text"];
+let cursorIndex = 0;
+setInterval(function() {
+  document.body.style.cursor = cursorTypes[cursorIndex];
+  cursorIndex = (cursorIndex + 1) % cursorTypes.length;
+}, 1000);
 </script>
 <p id="visits" style="position:fixed;top:0px;right:0px;color:red;font-size:2em;"></p>
 <script>
