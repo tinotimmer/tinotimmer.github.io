@@ -34,6 +34,11 @@
  #Pfeil {
      width: 200px;
 }
+#Gomme {
+    position:absolute;
+    width:200px;
+    height:100px;
+}
  #vbucks {
      position: fixed;
      width: 7%;
