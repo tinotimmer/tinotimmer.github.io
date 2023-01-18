@@ -19,8 +19,8 @@
       <li>Robert</li>
     </ul>
       
-      <img class="static" src="https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.png">
-      <img class="active" src="https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.gif">
+      <img class="static" src="kekw.gif">
+      <img class="active" src="kekwanimated.gif">
       <script>
           .static {
               position:absolute;
