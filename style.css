@@ -1,43 +1,41 @@
- 
-    body {
-        font-family: 'Comic Sans MS', cursive;
-  background-image: url("https://images7.alphacoders.com/115/1158141.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  
+ body {
+     font-family: 'Comic Sans MS', cursive;
+     background-image: url("https://images7.alphacoders.com/115/1158141.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     overflow: hidden;
 }
-.BFortnite {
-  position: absolute;
-  top: 70%;
-  left: 70%;
+ .BFortnite {
+     position: absolute;
+     top: 70%;
+     left: 70%;
 }
-.BFortnite:hover {
-    background-color: pink;
+ .BFortnite:hover {
+     background-color: pink;
 }
-#kekw{
-    width: 20%;
-    height: auto;
+ #kekw{
+     width: 20%;
+     height: auto;
 }
-#Start {
-    width: 70px;
-    height: 50px;
+ #Start {
+     width: 70px;
+     height: 50px;
 }
-#Stopp {
-    width: 70px;
-    height: 50px;
+ #Stopp {
+     width: 70px;
+     height: 50px;
 }
-#gommearrow {
-    top: 61.8%;
-    left: 50%;
-    border:5px solid orange;
+ #gommearrow {
+     top: 61.8%;
+     left: 50%;
+     border:5px solid orange;
 }
-#Pfeil {
-    width: 20%;
+ #Pfeil {
+     width: 20%;
 }
-#vbucks {
-    position: fixed;
-    width: 7%;
-    height: auto;
-    padding: 10px;
+ #vbucks {
+     position: fixed;
+     width: 7%;
+     height: auto;
+     padding: 10px;
 }
