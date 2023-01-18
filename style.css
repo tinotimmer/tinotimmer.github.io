@@ -18,10 +18,9 @@
 .kekw{
     width: 20%;
     height: auto;
-    background: url('https://i.imgur.com/Ul6SY80.jpeg');
 }
 .kekw:hover {
-  background: url('https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.gif');
+  content: url(https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.gif);
 }
 #Start {
     width: 70px;
