@@ -15,11 +15,11 @@
 .BFortnite:hover {
     background-color: pink;
 }
-.kekw{
+#kekw{
     width: 20%;
     height: auto;
 }
-.kekw:hover {
+#kekw:hover {
   content: url(https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.gif);
 }
 #Start {
