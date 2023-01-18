@@ -41,6 +41,7 @@
 }
  #vbucks {
      position: fixed;
+     top:-500;
      width: 7%;
      height: auto;
      padding: 10px;
