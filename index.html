@@ -25,16 +25,16 @@
     <img id="kekw" src="kekw.png">
     <audio id="audio" src="kekwlaugh.mp3"></audio>
     <script>
-      document.getElementById("kekw").addEventListener("mouseover", function() {
-        this.src = "kekwanimated.gif";
-          var audio = document.getElementById("audio");
-          audio.play();
-      });
-      document.getElementById("kekw").addEventListener("mouseout", function() {
-        this.src = "kekw.png";
+document.body.addEventListener("click", function (evt) {
+	this.src = "kekwanimated.gif";
 	var audio = document.getElementById("audio");
-        audio.pause();
-      });
+	audio.play();
+});			 
+document.getElementById("kekw").addEventListener("mouseout", function() {
+	this.src = "kekw.png";
+	var audio = document.getElementById("audio");
+	audio.pause();
+});
     </script>
     <audio id="radw" src="radwBOOST.mp3"></audio>
     <h1>Klicke für eine Überraschung bro</h1>
