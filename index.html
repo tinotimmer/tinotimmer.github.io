@@ -12,7 +12,7 @@
     <meta property=”og:description” content=”description of your website/webpage”>
     <meta property=”og:image” content=”//cdn.example.com/uploads/images/webpage_300x200.png”>
   </head>
-  <body>
+  <body onload="myFunction()">
     <h1>Willkommen auf Tino und Reys Website!</h1>
     <p>Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
     <ul>
@@ -88,12 +88,13 @@ document.body.addEventListener("click", function (evt) {
     </script>
     <img id="vbucks" src="https://i1.sndcdn.com/artworks-000343031856-yhnq57-t500x500.jpg">
 <script>
-document.addEventListener("load", function(){
+function myFunction() {
+  alert("Für Fortnite");
 	var button = document.getElementById("vbucks");
 	button.style.position = "absolute";
 	button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
 	button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
-});
+}
 var button = document.getElementById("vbucks");
 button.onmouseover = function() {
 	button.style.position = "absolute";
