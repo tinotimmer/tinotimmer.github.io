@@ -27,36 +27,21 @@
       <li>Robert</li>
     </ul>
       
-      <img class="static" src="kekw.gif">
-      <img class="active" src="kekwanimated.gif">
-      <script>
-          .static {
-              position:absolute;
-              background: white;
-            }
-
-            .static:hover {
-              opacity:0;
-           }
-      </script>
-<!--      
-      <img id="kekw" src=https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.png" alt="KEKW-Bild">
+      <img id="kekw" src"kekw.png" alt="KEKW-Bild">
 
       <script>
-      var img = document.getElementById("kekw");
-        img.onmouseover = function() {
-            this.src = "https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.gif";
-        }
-        img.onmouseout = function() {
-            this.src = "https://media.tenor.com/ASGuOCPGrKEAAAAC/kekw-kek.png";
-        }
+        document.getElementById("kekw").addEventListener("mouseover", function() {
+            this.src = "kekw.gif";
+        });
+        document.getElementById("kekw").addEventListener("mouseout", function() {
+            this.src = "kekw.png";
+        });
       </script>
-      -->
            
       <audio id="radw" src="radwBOOST.mp3"></audio>
       <h1>Klicke für eine Überraschung bro</h1> 
-<button id="Start" onclick="playRadw()">Start</button>
-<button id="Stopp" onclick="pauseRadw()">Stopp</button>
+    <button id="Start" onclick="playRadw()">Start</button>
+    <button id="Stopp" onclick="pauseRadw()">Stopp</button>
 
 <script>
   var x = document.getElementById("radw");
