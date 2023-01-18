@@ -102,6 +102,13 @@ document.body.addEventListener("click", function (evt) {
         button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
         button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
       }
-    </script>
+</script>
+<p id="visits" style="position:fixed;top:0px;right:0px;color:red;font-size:2em;"></p>
+<script>
+function cb(response) {
+	document.getElementById('visits').innerText = response.value;
+}
+</script>
+<script async src="https://api.countapi.xyz/hit/tinotimmer.github.io/visits?callback=cb"></script>
   </body>
 </html>
