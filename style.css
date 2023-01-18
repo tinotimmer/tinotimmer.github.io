@@ -40,3 +40,8 @@
      height: auto;
      padding: 10px;
 }
+.Embed {
+	position:absolute;
+	top:0px;
+	right:0px;
+}
