@@ -116,5 +116,8 @@ setInterval(function() {
             button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
           }
         </script>
+        <div id="counter">
+          <?php include("counter.php"); ?>
+        </div>
   </body>
   </html>
