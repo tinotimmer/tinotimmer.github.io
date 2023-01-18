@@ -27,8 +27,8 @@
 }
  #gommearrow {
      top: 61.8%;
-     left: 50%;
-     width: 200px;
+     right: 10%;
+     width: auto;
      border:5px solid orange;
 }
  #Pfeil {
