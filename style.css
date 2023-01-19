@@ -34,10 +34,11 @@ body {
      top: 61.8%;
      right: 11%;
      width: 320px;
-      margin-right: 10px;
+
 }
  #Pfeil {
      width: 200px;
+            margin-right: 10px;
 }
 #Gomme {
     position:absolute;
