@@ -2,7 +2,7 @@
      cursor: url('lama.png')64 64, auto;	
 }
 body {
-     font-family: 'Comic Sans MS', sans-serif;
+     font-family: 'initial', system-ui;
      background-image: url("https://images7.alphacoders.com/115/1158141.jpg");
      background-repeat: no-repeat;
      background-size: cover;
