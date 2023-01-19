@@ -12,7 +12,7 @@ body {
      position: absolute;
      top: 40%;
      right: 10%;
-      margin-left: 10px;
+      margin-left: 50px;
 }
  .BFortnite:hover {
      background-color: pink;
@@ -38,7 +38,7 @@ body {
 }
  #Pfeil {
      width: 200px;
-            margin-right: 10px;
+            margin-right: 50px;
 }
 #Gomme {
     position:absolute;
