@@ -1,137 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine erste Website</title>
-    <meta name=”description” content=”description of your website/webpage, make sure you use keywords!”>
-    <meta property=”og:title” content=”short title of your website/webpage” />
-    <meta property=”og:url” content=”https://tinotimmer.github.io/" />
-    <meta property=”og:description” content=”description of your website/webpage”>
-    <meta property=”og:image” content=”//cdn.example.com/uploads/images/webpage_300x200.png”>
-
-
-  </head>
-  <body onload="myFunction()">
-    <h1>Willkommen auf Tino und Reys Website!</h1>
-    <p>Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
-    <ul>
-      <li>Phil</li>
-      <li>Joel</li>
-      <li>Timo</li>
-      <li>Robert</li>
-  	<li>Viko</li>
-    </ul>
-																   
-    <img id="kekw" src="kekw.png">
-    <audio id="audio" src="kekwlaugh.mp3"></audio>
-    <script>
-      document.getElementById("kekw").addEventListener("mouseover", function() {
-        this.src = "kekwanimated.gif";
-          var audio = document.getElementById("audio");
-          audio.play();
-      });
-      document.getElementById("kekw").addEventListener("mouseout", function() {
-        this.src = "kekw.png";
-	var audio = document.getElementById("audio");
-        audio.stop();
-      });
-//Make title move
-	var titleText = "😎Meine erste Website &#127481;&#127479;";
-	var titleTextArray = titleText.split("");
-	var titleTextLength = titleTextArray.length;
-	var currentIndex = 0;
-
-	function updateTitle() {
-	    document.title = titleTextArray.slice(currentIndex).join("") + " - " + titleTextArray.slice(0, currentIndex).join("");
-	    currentIndex++;
-	    if (currentIndex === titleTextLength) {
-		currentIndex = 0;
-	    }
-	}
-
-	setInterval(updateTitle, 500);
-    </script>
-    <audio id="radw" src="radwBOOST.mp3"></audio>
-    <h1>Klicke für eine Überraschung bro</h1>
-    <button id="Start" onclick="playRadw()">Start</button>
-    <button id="Stopp" onclick="pauseRadw()">Stopp</button>
-    <script>
-      var x = document.getElementById("radw");
-
-      function playRadw() {
-        x.play();
-      }
-
-      function pauseRadw() {
-        x.pause();
-      }
-    </script>
-    <audio id="Fortnite" src="fur-fortnite-meme_43PjrtIo.mp3"></audio>
-    <script>
-      var y = document.getElementById("Fortnite");
-
-      function playFortnite() {
-        y.play();
-      }
-    </script>
-<div id="gommearrow">
-    <img id="Pfeil" src="https://png.pngtree.com/png-clipart/20210311/big/pngtree-red-line-arrow-png-image_6028629.png" alt="bameninhong">															 
-    <button class="BFortnite" onclick="playFortnite()">für Fortnite</button>
-</div>
-
-<img class="gif" id="Gomme" src="https://cdn.discordapp.com/emojis/1006900123692965958.gif?size=96&quality=lossless">
-    <script>
-      // Initialisieren Sie die Position des Gifs
-      var gif = document.getElementById("Gomme");
-      gif.style.left = "0px";
-      gif.style.top = "0px";
-      // Legen Sie die Geschwindigkeit fest, mit der das Gif wandert (in Pixel pro Sekunde)
-      var speed = 6;
-      // Legen Sie die Richtung fest, in die das Gif wandert (in Grad)
-      var direction = 45;
-      // Berechnen Sie die Bewegung in x- und y-Richtung
-      var x_move = Math.cos(direction * Math.PI / 180) * speed;
-      var y_move = Math.sin(direction * Math.PI / 180) * speed;
-      setInterval(function() {
-        var left = parseInt(gif.style.left);
-        var top = parseInt(gif.style.top);
-        if (left + gif.width > window.innerWidth || left < 0) {
-          x_move = -x_move;
-        }
-        if (top + gif.height > window.innerHeight || top < 0) {
-          y_move = -y_move;
-        }
-        gif.style.left = (left + x_move) + "px";
-        gif.style.top = (top + y_move) + "px";
-      }, 20);
-    </script>
-    <img id="vbucks" src="https://i1.sndcdn.com/artworks-000343031856-yhnq57-t500x500.jpg">
-<script>
-function myFunction() {
-	var button = document.getElementById("vbucks");
-	button.style.position = "absolute";
-	button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
-	button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
-}
-var button = document.getElementById("vbucks");
-button.onmouseover = function() {
-	button.style.position = "absolute";
-	button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
-	button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
-}
-</script>
-<p id="visits" style="position:fixed;top:0px;right:0px;color:red;font-size:2em;"></p>
-<script>
-function cb(response) {
-	document.getElementById('visits').innerText = response.value;
-}
-</script>
-
-<script async src="https://api.countapi.xyz/hit/tinotimmer.github.io/visits?callback=cb"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  </body>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Meine erste Website</title>
+		<meta name=”description” content=”description of your website/webpage, make sure you use keywords!”>
+		<meta property=”og:title” content=”short title of your website/webpage” />
+		<meta property=”og:url” content=”https://tinotimmer.github.io/" />
+		<meta property=”og:description” content=”description of your website/webpage”>
+		<meta property=”og:image” content=”//cdn.example.com/uploads/images/webpage_300x200.png”>
+	</head>
+	<body onload="myFunction()">
+		<h1>Willkommen auf Tino und Reys Website!</h1>
+		<p>Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
+		<ul>
+			<li>Phil</li>
+			<li>Joel</li>
+			<li>Timo</li>
+			<li>Robert</li>
+			<li>Viko</li>
+		</ul>
+		<img id="kekw" src="kekw.png">
+		<audio id="audio" src="kekwlaugh.mp3"></audio>
+		<script>
+			document.getElementById("kekw").addEventListener("mouseover", function() {
+			  this.src = "kekwanimated.gif";
+			    var audio = document.getElementById("audio");
+			    audio.play();
+			});
+			document.getElementById("kekw").addEventListener("mouseout", function() {
+			  this.src = "kekw.png";
+			var audio = document.getElementById("audio");
+			  audio.stop();
+			});
+			//Make title move
+			var titleText = "😎Meine erste Website &#127481;&#127479;";
+			var titleTextArray = titleText.split("");
+			var titleTextLength = titleTextArray.length;
+			var currentIndex = 0;
+			
+			function updateTitle() {
+			document.title = titleTextArray.slice(currentIndex).join("") + " - " + titleTextArray.slice(0, currentIndex).join("");
+			currentIndex++;
+			if (currentIndex === titleTextLength) {
+			currentIndex = 0;
+			}
+			}
+			
+			setInterval(updateTitle, 500);
+		</script>
+		<audio id="radw" src="radwBOOST.mp3"></audio>
+		<h1>Klicke für eine Überraschung bro</h1>
+		<button id="Start" onclick="playRadw()">Start</button>
+		<button id="Stopp" onclick="pauseRadw()">Stopp</button>
+		<script>
+			var x = document.getElementById("radw");
+			
+			function playRadw() {
+			  x.play();
+			}
+			
+			function pauseRadw() {
+			  x.pause();
+			}
+		</script>
+		<audio id="Fortnite" src="fur-fortnite-meme_43PjrtIo.mp3"></audio>
+		<script>
+			var y = document.getElementById("Fortnite");
+			
+			function playFortnite() {
+			  y.play();
+			}
+		</script>
+		<div id="gommearrow">
+			<img id="Pfeil" src="https://png.pngtree.com/png-clipart/20210311/big/pngtree-red-line-arrow-png-image_6028629.png" alt="bameninhong">															 
+			<button class="BFortnite" onclick="playFortnite()">für Fortnite</button>
+		</div>
+		<img class="gif" id="Gomme" src="https://cdn.discordapp.com/emojis/1006900123692965958.gif?size=96&quality=lossless">
+		<script>
+			// Initialisieren Sie die Position des Gifs
+			var gif = document.getElementById("Gomme");
+			gif.style.left = "0px";
+			gif.style.top = "0px";
+			// Legen Sie die Geschwindigkeit fest, mit der das Gif wandert (in Pixel pro Sekunde)
+			var speed = 6;
+			// Legen Sie die Richtung fest, in die das Gif wandert (in Grad)
+			var direction = 45;
+			// Berechnen Sie die Bewegung in x- und y-Richtung
+			var x_move = Math.cos(direction * Math.PI / 180) * speed;
+			var y_move = Math.sin(direction * Math.PI / 180) * speed;
+			setInterval(function() {
+			  var left = parseInt(gif.style.left);
+			  var top = parseInt(gif.style.top);
+			  if (left + gif.width > window.innerWidth || left < 0) {
+			    x_move = -x_move;
+			  }
+			  if (top + gif.height > window.innerHeight || top < 0) {
+			    y_move = -y_move;
+			  }
+			  gif.style.left = (left + x_move) + "px";
+			  gif.style.top = (top + y_move) + "px";
+			}, 20);
+		</script>
+		<img id="vbucks" src="https://i1.sndcdn.com/artworks-000343031856-yhnq57-t500x500.jpg">
+		<script>
+			function myFunction() {
+				var button = document.getElementById("vbucks");
+				button.style.position = "absolute";
+				button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
+				button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
+			}
+			var button = document.getElementById("vbucks");
+			button.onmouseover = function() {
+				button.style.position = "absolute";
+				button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
+				button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
+			}
+		</script>
+		<p id="visits" style="position:fixed;top:0px;right:0px;color:red;font-size:2em;"></p>
+		<script>
+			function cb(response) {
+				document.getElementById('visits').innerText = response.value;
+			}
+		</script>
+		<script async src="https://api.countapi.xyz/hit/tinotimmer.github.io/visits?callback=cb"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	</body>
 </html>
