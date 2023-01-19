@@ -49,3 +49,7 @@ body {
      height: auto;
      padding: 10px;
 }
+@font-face {
+ font-family: 'emoji';
+ src: url('emoji-font.ttf') format('truetype');
+}
