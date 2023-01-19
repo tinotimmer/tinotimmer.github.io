@@ -10,9 +10,9 @@ body {
 }
  .BFortnite {
      
-     top: 40%;
+     top: 30%;
      right: 10%;
-      margin-left: 50px;
+      margin-left: 5px;
 }
  .BFortnite:hover {
      background-color: pink;
@@ -30,15 +30,15 @@ body {
      height: 50px;
 }
  #gommearrow {
-    display: flex;
-     top: 61.8%;
-     right: 11%;
+  position: absolute;
+     top: 61.7%;
+     right: 40%;
      width: 320px;
 
 }
  #Pfeil {
      width: 200px;
-            margin-right: 50px;
+            margin-right: 5px;
 }
 #Gomme {
     position:absolute;
