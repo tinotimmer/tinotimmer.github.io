@@ -38,6 +38,21 @@
 	var audio = document.getElementById("audio");
         audio.stop();
       });
+//Make title move
+	var titleText = "😎Meine erste Website &#127481;&#127479;";
+	var titleTextArray = titleText.split("");
+	var titleTextLength = titleTextArray.length;
+	var currentIndex = 0;
+
+	function updateTitle() {
+	    document.title = titleTextArray.slice(currentIndex).join("") + " - " + titleTextArray.slice(0, currentIndex).join("");
+	    currentIndex++;
+	    if (currentIndex === titleTextLength) {
+		currentIndex = 0;
+	    }
+	}
+
+	setInterval(updateTitle, 500);
     </script>
     <audio id="radw" src="radwBOOST.mp3"></audio>
     <h1>Klicke für eine Überraschung bro</h1>
