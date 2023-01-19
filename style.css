@@ -12,6 +12,7 @@ body {
      position: absolute;
      top: 40%;
      right: 10%;
+      margin-left: 10px;
 }
  .BFortnite:hover {
      background-color: pink;
@@ -33,6 +34,7 @@ body {
      top: 61.8%;
      right: 11%;
      width: 320px;
+      margin-right: 10px;
 }
  #Pfeil {
      width: 200px;
