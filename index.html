@@ -18,6 +18,7 @@
   <a href="#about">Über mich</a>
 <!--  <a href="#services">Services</a>-->
 <!--  <a href="#contact">Contact</a>-->
+<p id="visits" style="position:absolute;right:0px;color:red;font-size:2em;"></p>
 </nav>
 <style>
 nav {
@@ -149,10 +150,10 @@ nav a.active {
 				button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
 			}
 		</script>
-		<p id="visits" style="position:fixed;top:0px;right:0px;color:red;font-size:2em;"></p>
+	
 		<script>
 			function cb(response) {
-				document.getElementById('visits').innerText = response.value;
+				document.getElementById('visits').innerText = "Aufrufe:"+response.value;
 			}
 		</script>
 		<script async src="https://api.countapi.xyz/hit/tinotimmer.github.io/visits?callback=cb"></script>
