@@ -1,13 +1,16 @@
-<div id="gold-block"></div>
-<div id="pickaxe"></div>
+<div class="gold-block">
+  <div class="pickaxe"></div>
+</div>
 <style>
-#gold-block {
+.gold-block {
   width: 100px;
   height: 100px;
-  background-color: gold;
+  background-image: url('gold-ore.png');
+  background-size: cover; /* to make the image fit the size of the block */
+  position: relative;
 }
-
-#pickaxe {
+  
+.pickaxe {
   width: 50px;
   height: 50px;
   background-image: url('pickaxe.png');
@@ -23,24 +26,31 @@
     top: 50px;
     left: 0px;
   }
-  50% {
+  20% {
     transform: rotate(90deg);
     top: 40px;
     left: 10px;
   }
-  100% {
+  40% {
     transform: rotate(0deg);
     top: 50px;
     left: 20px;
   }
+  60% {
+    transform: rotate(90deg);
+    top: 40px;
+    left: 30px;
+  }
+  80% {
+    transform: rotate(0deg);
+    top: 50px;
+    left: 40px;
+  }
+  100% {
+    transform: rotate(90deg);
+    top: 40px;
+    left: 50px;
+    background-color:silver;
+  }
 }
 </style>
-
-<script>
-var goldBlock = document.getElementById("gold-block");
-var pickaxe = document.getElementById("pickaxe");
-
-pickaxe.addEventListener("animationiteration", function() {
-  goldBlock.style.backgroundColor = "silver";
-});
-</script>
