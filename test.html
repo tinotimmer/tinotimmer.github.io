@@ -1,0 +1,46 @@
+<div id="gold-block"></div>
+<div id="pickaxe"></div>
+<style>
+#gold-block {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+}
+
+#pickaxe {
+  width: 50px;
+  height: 50px;
+  background-image: url('pickaxe.png');
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  animation: mining 2s linear infinite;
+}
+
+@keyframes mining {
+  0% {
+    transform: rotate(0deg);
+    top: 50px;
+    left: 0px;
+  }
+  50% {
+    transform: rotate(90deg);
+    top: 40px;
+    left: 10px;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 50px;
+    left: 20px;
+  }
+}
+</style>
+
+<script>
+var goldBlock = document.getElementById("gold-block");
+var pickaxe = document.getElementById("pickaxe");
+
+pickaxe.addEventListener("animationiteration", function() {
+  goldBlock.style.backgroundColor = "silver";
+});
+</script>
