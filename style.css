@@ -53,3 +53,9 @@ body {
  font-family: 'emoji';
  src: url('emoji-font.ttf') format('truetype');
 }
+.goofyvideo {
+    width: 45%;
+    margin-left: 3%;
+    height: auto;
+    float: left;
+}
