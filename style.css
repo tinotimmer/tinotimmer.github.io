@@ -22,9 +22,15 @@ body {
      width: 70px;
      height: 50px;
 }
+#Start:hover {
+    background-color: pink;
+}
  #Stopp {
      width: 70px;
      height: 50px;
+}
+#Stopp:hover {
+    background-color: pink;
 }
  #gommearrow {
   position: absolute;
