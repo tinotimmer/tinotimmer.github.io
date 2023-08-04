@@ -15,9 +15,9 @@
 	<body onload="myFunction()">
 <nav>
   <a href="index.html" active>Home</a>
-  <a href="about.html">Über mich</a>
+  <a id="Info" href="about.html">Über mich</a>
   <img src="übersetzen.png" width="80" height="20">
-  <button onclick="translateToEnglish()">English</button>
+  <button id="English" onclick ="translateToEnglish()">English</button>
 <!--  <a href="#services">Services</a>-->
 <!--  <a href="#contact">Contact</a>-->
 </nav>
@@ -51,18 +51,43 @@ nav a.active {
 		<h1 id="title1">Willkommen auf Tinos Website!</h1>
 		<p id="paragraph">Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
 		<script>
-			function translateToEnglish() {
-				var newTitle = "Welcome to my Website!";
-				var newParagraph = "This is my first website created with HTML.";
-				var newTitle1 = "Click for a surprise bro"
-				var newButton = "for fortnite"
-				var newButton1 = "Stop"
-				document.getElementById("title1").textContent = newTitle;
-				document.getElementById("paragraph").textContent = newParagraph;
-				document.getElementById("title2").textContent = newTitle1;
-				document.getElementById("BFortnite").textContent = newButton;
-				document.getElementById("Stopp").textContent = newButton1;
-			}
+			 var isGerman = true;
+
+function translateToEnglish()
+ 	{
+	var newTitle = "";
+	var newParagraph = "";
+	var newTitle2 = "";
+	var newButton = "";
+	var newButton2 = "";
+	var newReiter = "";
+
+	if (isGerman) {
+		newTitle = "Welcome to my Website!";
+		newParagraph = "This is my first website created with HTML.";
+		newTitle2 = "Click for a surprise, buddy";
+		newButton = "for Fortnite";
+		newButton2 = "English";
+		newReiter = "About me";
+	} else {
+		newTitle = "Willkommen auf meiner Website!";
+		newParagraph = "Dies ist meine erste Website, die ich mit HTML erstellt habe.";
+		newTitle2 = "Klicke für eine Überraschung, Kumpel";
+		newButton = "für Fortnite";
+		newButton2 = "Deutsch";
+		newReiter = "Über mich";
+	}
+
+	document.getElementById("title1").textContent = newTitle;
+	document.getElementById("paragraph").textContent = newParagraph;
+	document.getElementById("title2").textContent = newTitle2;
+	document.getElementById("BFortnite").textContent = newButton;
+	document.getElementById("Stopp").textContent = "Stop"; // Wenn du möchtest, dass der Stopp-Button immer "Stop" bleibt, ändern wir ihn hier zurück.
+	document.getElementById("Info").textContent = newReiter;
+	document.getElementById("languageButton").textContent = newButton2;
+
+	isGerman = !isGerman;
+}
 		</script>
 		<ul>
 			<li>Niclas</li>
