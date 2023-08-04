@@ -50,14 +50,18 @@ nav a.active {
 </style>
 		<h1 id="title1">Willkommen auf Tinos Website!</h1>
 		<p id="paragraph">Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
-		<button onclick="translateToEnglish()">Text ändern</button>
 		<script>
-			function changeText() {
+			function translateToEnglish() {
 				var newTitle = "Welcome to my Website!";
 				var newParagraph = "This is my first website created with HTML.";
-	
+				var newTitle1 = "Click for a surprise bro"
+				var newButton = "for fortnite"
+				var newButton1 = "Stop"
 				document.getElementById("title1").textContent = newTitle;
 				document.getElementById("paragraph").textContent = newParagraph;
+				document.getElementById("title2").textContent = newTitle1;
+				document.getElementById("BFortnite").textContent = newButton;
+				document.getElementById("Stopp").textContent = newButton1;
 			}
 		</script>
 		<ul>
@@ -89,7 +93,7 @@ nav a.active {
 			setInterval(updateTitle, 100);
 		</script>
 		<audio id="radw" src="radwBOOST.mp3"></audio>
-		<h1>Klicke für eine Überraschung bro</h1>
+		<h1 id="title2" style="color:maroon">Klicke für eine Überraschung bro</h1>
 		<button id="Start" onclick="playRadw()">Start</button>
 		<button id="Stopp" onclick="pauseRadw()">Stopp</button>
 		<script>
@@ -113,7 +117,7 @@ nav a.active {
 		</script>
 		<div id="gommearrow">
 			<img id="Pfeil" src="gommearrow.png">															 
-			<button class="BFortnite" onclick="playFortnite()">für Fortnite</button>
+			<button class id="BFortnite" onclick="playFortnite()">für Fortnite</button>
 		</div>
 		<img class="gif" id="Gomme" src="https://cdn.discordapp.com/emojis/1006900123692965958.gif?size=96&quality=lossless">
 		<script>
