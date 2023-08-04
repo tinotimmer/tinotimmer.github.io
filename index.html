@@ -16,6 +16,8 @@
 <nav>
   <a href="index.html" active>Home</a>
   <a href="about.html">Über mich</a>
+  <img src="übersetzen.png" width="80" height="20">
+  <button onclick="translateToEnglish()">English</button>
 <!--  <a href="#services">Services</a>-->
 <!--  <a href="#contact">Contact</a>-->
 </nav>
@@ -46,8 +48,18 @@ nav a.active {
   color: white;
 }
 </style>
-		<h1>Willkommen auf Tinos Website!</h1>
-		<p>Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
+		<h1 id="title1">Willkommen auf Tinos Website!</h1>
+		<p id="paragraph">Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
+		<button onclick="translateToEnglish()">Text ändern</button>
+		<script>
+			function changeText() {
+				var newTitle = "Welcome to my Website!";
+				var newParagraph = "This is my first website created with HTML.";
+	
+				document.getElementById("title1").textContent = newTitle;
+				document.getElementById("paragraph").textContent = newParagraph;
+			}
+		</script>
 		<ul>
 			<li>Niclas</li>
 			<li>Phil</li>
