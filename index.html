@@ -59,22 +59,25 @@ function translateToEnglish()
 	var newParagraph = "";
 	var newTitle2 = "";
 	var newButton = "";
+	var newButton1 = "";
 	var newButton2 = "";
 	var newReiter = "";
 
 	if (isGerman) {
 		newTitle = "Welcome to my Website!";
 		newParagraph = "This is my first website created with HTML.";
-		newTitle2 = "Click for a surprise, buddy";
-		newButton = "for Fortnite";
-		newButton2 = "English";
+		newTitle2 = "Click for a surprise bro";
+		newButton = "for fortnite";
+		newButton1 = "Stop";
+		newButton2 = "Deutsch";
 		newReiter = "About me";
 	} else {
 		newTitle = "Willkommen auf meiner Website!";
 		newParagraph = "Dies ist meine erste Website, die ich mit HTML erstellt habe.";
 		newTitle2 = "Klicke für eine Überraschung, Kumpel";
 		newButton = "für Fortnite";
-		newButton2 = "Deutsch";
+		newButton1 = "Stopp";
+		newButton2 = "English";
 		newReiter = "Über mich";
 	}
 
@@ -82,9 +85,9 @@ function translateToEnglish()
 	document.getElementById("paragraph").textContent = newParagraph;
 	document.getElementById("title2").textContent = newTitle2;
 	document.getElementById("BFortnite").textContent = newButton;
-	document.getElementById("Stopp").textContent = "Stop"; // Wenn du möchtest, dass der Stopp-Button immer "Stop" bleibt, ändern wir ihn hier zurück.
+	document.getElementById("Stopp").textContent = newButton1; // Wenn du möchtest, dass der Stopp-Button immer "Stop" bleibt, ändern wir ihn hier zurück.
 	document.getElementById("Info").textContent = newReiter;
-	document.getElementById("languageButton").textContent = newButton2;
+	document.getElementById("English").textContent = newButton2;
 
 	isGerman = !isGerman;
 }
