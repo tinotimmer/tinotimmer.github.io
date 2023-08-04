@@ -17,7 +17,7 @@
   <a href="index.html" active>Home</a>
   <a id="Info" href="about.html">Über mich</a>
   <img src="übersetzen.png" width="80" height="20">
-  <button id="English" onclick ="translateToEnglish()">English</button>
+  <button id="English" onclick ="toggleLanguage()">English</button>
 <!--  <a href="#services">Services</a>-->
 <!--  <a href="#contact">Contact</a>-->
 </nav>
@@ -51,46 +51,35 @@ nav a.active {
 		<h1 id="title1">Willkommen auf Tinos Website!</h1>
 		<p id="paragraph">Dies ist meine erste Website, die ich mit HTML erstellt habe.</p>
 		<script>
-			 var isGerman = true;
+			 function toggleLanguage() {
+            var isGerman = localStorage.getItem('isGerman') === 'true';
+            isGerman = !isGerman;
+            localStorage.setItem('isGerman', isGerman);
+            updateText();
+        }
 
-function translateToEnglish()
- 	{
-	var newTitle = "";
-	var newParagraph = "";
-	var newTitle2 = "";
-	var newButton = "";
-	var newButton1 = "";
-	var newButton2 = "";
-	var newReiter = "";
+        function updateText() {
+            var isGerman = localStorage.getItem('isGerman') === 'true';
+		 
+            var newTitle = isGerman ? "Willkommen auf meiner Website!" : "Welcome to my Website!";
+            var newParagraph = isGerman ? "Dies ist meine erste Website, die ich mit HTML erstellt habe." : "This is my first website created with HTML.";
+            var newTitle2 = isGerman ? "Klicke für eine Überraschung bro" : "Click for a surprise bro";
+            var newButton = isGerman ? "für Fortnite" : "for Fortnite";
+			var newButton1 = isGerman ? "Stopp" : "Stop";
+            var newButton2 = isGerman ? "English" : "Deutsch";
+            var newReiter = isGerman ? "Über mich" : "About me";
 
-	if (isGerman) {
-		newTitle = "Welcome to my Website!";
-		newParagraph = "This is my first website created with HTML.";
-		newTitle2 = "Click for a surprise bro";
-		newButton = "for fortnite";
-		newButton1 = "Stop";
-		newButton2 = "Deutsch";
-		newReiter = "About me";
-	} else {
-		newTitle = "Willkommen auf meiner Website!";
-		newParagraph = "Dies ist meine erste Website, die ich mit HTML erstellt habe.";
-		newTitle2 = "Klicke für eine Überraschung, Kumpel";
-		newButton = "für Fortnite";
-		newButton1 = "Stopp";
-		newButton2 = "English";
-		newReiter = "Über mich";
-	}
+            document.getElementById("title1").textContent = newTitle;
+            document.getElementById("paragraph").textContent = newParagraph;
+            document.getElementById("title2").textContent = newTitle2;
+            document.getElementById("BFortnite").textContent = newButton;
+            document.getElementById("Stopp").textContent = newButton1;
+            document.getElementById("Info").textContent = newReiter;
+            document.getElementById("English").textContent = newButton2;
+        }
 
-	document.getElementById("title1").textContent = newTitle;
-	document.getElementById("paragraph").textContent = newParagraph;
-	document.getElementById("title2").textContent = newTitle2;
-	document.getElementById("BFortnite").textContent = newButton;
-	document.getElementById("Stopp").textContent = newButton1; // Wenn du möchtest, dass der Stopp-Button immer "Stop" bleibt, ändern wir ihn hier zurück.
-	document.getElementById("Info").textContent = newReiter;
-	document.getElementById("English").textContent = newButton2;
-
-	isGerman = !isGerman;
-}
+		updateText();
+		
 		</script>
 		<ul>
 			<li>Niclas</li>
